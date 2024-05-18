@@ -1,0 +1,4 @@
+.hero {
+  @apply flex flex-col;
+  @apply before:bg-gray-6 before:bg-[url('/hero.png')] before:bg-no-repeat before:bg-top before:absolute before:top-0 before:inset-0 before:-z-10;
+}

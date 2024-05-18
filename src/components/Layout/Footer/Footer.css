@@ -1,0 +1,16 @@
+.footer {
+  @apply flex mt-auto items-center justify-center gap-x-40 min-h-72;
+  @apply bg-black text-white;
+}
+
+.footer-navigation {
+  @apply flex flex-col gap-4;
+
+  & a {
+    @apply hover:underline;
+  }
+}
+
+.social-navigation {
+  @apply flex gap-x-[3.25rem];
+}

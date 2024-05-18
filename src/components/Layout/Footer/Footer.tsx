@@ -2,15 +2,16 @@ import mf3Logo from "../../../assets/mf3-logo.svg";
 import facebookLogo from "../../../assets/facebook.svg";
 import instagramLogo from "../../../assets/instagram.svg";
 import tiktokLogo from "../../../assets/tiktok.svg";
+import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="flex mt-auto bg-black min-h-72 items-center place-content-center text-white gap-x-40">
+    <footer className="footer">
       <div className="flex gap-x-[3.25rem]">
-        <img src={mf3Logo} />
+        <img src={mf3Logo} className="select-none" />
         <span className="h-[8.75rem] w-px bg-[#7A8087]" />
         <div className="self-end">
-          <ul className="flex flex-col gap-4">
+          <ul className="footer-navigation">
             <li>
               <a href="">Aviso de Privacidad</a>
             </li>
@@ -24,7 +25,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <ul className="flex gap-x-[3.25rem]">
+      <ul className="social-navigation">
         <li>
           <a href="">
             <img src={facebookLogo} />

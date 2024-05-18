@@ -1,0 +1,12 @@
+.navigation {
+  @apply flex items-center justify-center gap-[4.75rem] h-[7.75rem] bg-transparent;
+  @apply font-navigation text-white text-[22px] font-normal not-italic uppercase;
+
+  & > a {
+    @apply hover:underline hover:text-gray-3;
+  }
+
+  & > a.active {
+    @apply underline text-gold;
+  }
+}
