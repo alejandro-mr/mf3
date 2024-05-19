@@ -1,12 +1,38 @@
 .navigation {
   @apply flex items-center justify-center gap-[4.75rem] h-[7.75rem] bg-transparent;
-  @apply font-navigation text-white text-[22px] font-normal not-italic uppercase;
+  @apply font-navigation text-white text-[22px] uppercase;
 
-  & > a {
+  & > a, div {
+    @apply cursor-pointer;
     @apply hover:underline hover:text-gray-3;
   }
 
   & > a.active {
     @apply underline text-gold;
+  }
+
+  & .dropdown {
+    @apply absolute -start-1/2 p-5 min-w-[9.125rem] transition-opacity duration-500;
+    @apply bg-black rounded-md drop-shadow-md font-franklin text-gray-1 text-left opacity-0 -top-96;
+    @apply hover:no-underline text-gray-1;
+    /*@apply opacity-0 -top-96;*/
+
+    & ul {
+      @apply h-full grid  gap-4 text-sm text-gray-1 font-franklin normal-case;
+    }
+
+    & ul > li > a {
+      @apply hover:underline text-gray-1;
+    }
+
+
+    & > ul > div.action {
+      @apply flex flex-col gap-y-3.5 -mt-0.5;
+      @apply text-green-neutral font-semibold cursor-pointer;
+    }
+  }
+
+  & .dropdown.visible {
+    @apply opacity-100 top-10;
   }
 }

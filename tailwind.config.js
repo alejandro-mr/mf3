@@ -12,10 +12,14 @@ export default {
           5: "#21262C",
           6: "#191C1F",
         },
+        green: {
+          neutral: "#16CB9F",
+        },
         gold: "#CEAA5B",
       },
       fontFamily: {
         navigation: ["Bebas Neue", "sans-serif"],
+        franklin: ["Libre Franklin", "sans-serif"],
       },
     },
   },
