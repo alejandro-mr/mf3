@@ -1,6 +1,6 @@
 .navigation {
-  @apply flex items-center justify-center gap-[4.75rem] h-[7.75rem] bg-transparent;
-  @apply font-navigation text-white text-[22px] uppercase;
+  @apply flex items-center justify-center gap-[4.75rem] min-h-[7.75rem] max-h-[7.75rem] bg-transparent;
+  @apply font-bebas text-white text-[22px] uppercase;
 
   & > a, div {
     @apply cursor-pointer;

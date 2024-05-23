@@ -18,8 +18,11 @@ export default {
         gold: "#CEAA5B",
       },
       fontFamily: {
-        navigation: ["Bebas Neue", "sans-serif"],
+        bebas: ["Bebas Neue", "sans-serif"],
         franklin: ["Libre Franklin", "sans-serif"],
+      },
+      letterSpacing: {
+        wide: "0.02em",
       },
     },
   },

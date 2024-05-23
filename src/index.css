@@ -5,7 +5,7 @@
 @layer base {
   html, body {
     font-family: "Libre Franklin", sans-serif;
-    @apply h-full;
+    @apply h-full text-white;
   }
 }
 
