@@ -20,7 +20,7 @@
 }
 
 .about-us {
-  @apply flex items-start gap-10 ml-40 z-0;
+  @apply flex items-start gap-10 ml-64 z-0;
   @apply bg-black pt-[15.25rem] pb-[8.25rem];
 
   & h2 {
