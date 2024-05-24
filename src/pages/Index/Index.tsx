@@ -1,7 +1,6 @@
 import SponsorsBar from "../../components/SponsorsBar/SponsorsBar";
-import AthleteGlassCard from "./components/AthleteGlassCard";
-import TrainerGlassCard from "./components/TrainerGlassCard";
-import JudgeGlassCard from "./components/JudgeGlassCard";
+import CommunitySection from "./components/CommunitySection/CommunitySection";
+import SocialSection from "./components/SocialSection/SocialSection";
 import mf3Logo from "../../assets/mf3-logo.svg";
 import aboutUsPicture from "../../assets/about-us-picture.png";
 
@@ -81,16 +80,7 @@ function Index() {
           </div>
         </section>
       </div>
-      <div className="section-wrapper bg-gray-6">
-        <section className="community">
-          <h2>Forma parte de la comunidad:</h2>
-          <div className="grid grid-cols-3 gap-10">
-            <AthleteGlassCard />
-            <TrainerGlassCard />
-            <JudgeGlassCard />
-          </div>
-        </section>
-      </div>
+      <CommunitySection />
       <div className="section-wrapper bg-gray-6 bg-[url('/roadmap-bg.png')]">
         <p>
           Comienza tu historia en <span>MF3</span> y sé tu mejor versión
@@ -107,9 +97,7 @@ function Index() {
           estás en el mundo del F.F. de México.
         </p>
       </div>
-      <div className="section-wrapper bg-gray-6 relative z-0 after:-z-10 after:absolute after:w-full after:h-full after:bg-gray-5/75 after:mix-blend-multiply">
-        <p>¡No te quedes atrás y síguenos!</p>
-      </div>
+      <SocialSection />
     </>
   );
 }

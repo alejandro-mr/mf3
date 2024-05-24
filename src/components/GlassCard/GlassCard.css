@@ -1,6 +1,6 @@
 .glass-card {
-  @apply flex flex-col gap-3.5 px-10 pt-6 pb-8 max-w-[21.25rem] rounded-2xl border-neutral-100/25 border relative overflow-hidden shadow-card text-sm;
-  @apply before:absolute before:inset-0 before:bg-gradient-to-b before:from-neutral-300 before:to-neutral-300/20 before:opacity-20;
+  @apply flex flex-col rounded-2xl border-neutral-100/25 border relative overflow-hidden shadow-card text-sm z-0;
+  @apply before:absolute before:inset-0 before:bg-gradient-to-b before:from-neutral-300 before:to-neutral-300/20 before:opacity-20 before:-z-10;
 
   & .title {
     @apply font-semibold text-lg self-center pb-2.5;
@@ -10,7 +10,7 @@
     @apply flex flex-col pt-2.5 mt-auto;
   }
 
-  & a {
-    @apply mt-auto px-5 py-1.5 self-center text-black rounded-2xl;
+  & .button {
+    @apply mt-auto px-5 py-1.5 self-center text-black rounded-2xl leading-6;
   }
 }
