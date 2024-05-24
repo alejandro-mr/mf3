@@ -16,6 +16,10 @@ export default {
           neutral: "#16CB9F",
         },
         gold: "#CEAA5B",
+        mustard: "#FAB348",
+        violet: {
+          neutral: "#9888FF",
+        },
       },
       fontFamily: {
         bebas: ["Bebas Neue", "sans-serif"],
@@ -23,6 +27,9 @@ export default {
       },
       letterSpacing: {
         wide: "0.02em",
+      },
+      boxShadow: {
+        card: "0 4px 20px rgb(0 0 0 / 0.25)",
       },
     },
   },

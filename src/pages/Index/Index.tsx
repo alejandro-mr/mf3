@@ -1,7 +1,11 @@
 import SponsorsBar from "../../components/SponsorsBar/SponsorsBar";
-import "./Index.css";
+import AthleteGlassCard from "./components/AthleteGlassCard";
+import TrainerGlassCard from "./components/TrainerGlassCard";
+import JudgeGlassCard from "./components/JudgeGlassCard";
 import mf3Logo from "../../assets/mf3-logo.svg";
 import aboutUsPicture from "../../assets/about-us-picture.png";
+
+import "./Index.css";
 
 function Index() {
   return (
@@ -80,10 +84,10 @@ function Index() {
       <div className="section-wrapper bg-gray-6">
         <section className="community">
           <h2>Forma parte de la comunidad:</h2>
-          <div className="grid grid-cols-3">
-            <div></div>
-            <div></div>
-            <div></div>
+          <div className="grid grid-cols-3 gap-10">
+            <AthleteGlassCard />
+            <TrainerGlassCard />
+            <JudgeGlassCard />
           </div>
         </section>
       </div>

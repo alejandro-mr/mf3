@@ -29,10 +29,10 @@
 }
 
 .community {
-  @apply flex flex-col pt-[84px] pb-[127px] mx-auto;
+  @apply flex flex-col pt-[84px] pb-[127px] mx-auto items-center;
   @apply bg-gray-6;
 
   & h2 {
-    @apply font-bebas text-6xl;
+    @apply font-bebas text-6xl pb-[4.25rem];
   }
 }
