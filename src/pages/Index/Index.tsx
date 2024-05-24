@@ -10,7 +10,10 @@ function Index() {
   return (
     <>
       <section className="hero">
-        <h1>Bienvenidos a la casa del Functional Fitness en México</h1>
+        <h1>
+          Bienvenidos a la casa del
+          <br /> Functional Fitness en México
+        </h1>
         <p className="subtitle mt-8">
           Entérate del Calendario 2024 en nuestras redes sociales y participa en
           nuestros eventos.
@@ -21,7 +24,7 @@ function Index() {
         </p>
         <a className="button">Comenzar</a>
       </section>
-      <div className="absolute inset-x-1/4 top-[750px] z-10">
+      <div className="absolute top-[750px] inset-x-0 mx-auto z-10 w-[69rem] min-w-[69rem]">
         <SponsorsBar />
       </div>
       <div className="section-wrapper bg-black">
@@ -71,7 +74,7 @@ function Index() {
               </li>
             </ul>
           </div>
-          <div className="relative min-w-max w-[625px] flex justify-end -z-10">
+          <div className="relative min-w-[470px] flex justify-end -z-10">
             <img
               src={mf3Logo}
               className="absolute -bottom-20 right-[322px] h-[179px]"
