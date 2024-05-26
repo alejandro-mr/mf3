@@ -3,6 +3,9 @@ import facebookLogo from "../../../assets/facebook.svg";
 import instagramLogo from "../../../assets/instagram.svg";
 import tiktokLogo from "../../../assets/tiktok.svg";
 import "./Footer.css";
+import FacebookLink from "../../FacebookLink/FacebookLink";
+import InstagramLink from "../../InstagramLink/InstagramLink";
+import TiktokLink from "../../TiktokLink/TiktokLink";
 
 function Footer() {
   return (
@@ -27,19 +30,13 @@ function Footer() {
       </div>
       <ul className="social-navigation">
         <li>
-          <a href="">
-            <img src={facebookLogo} />
-          </a>
+          <FacebookLink iconOnly />
         </li>
         <li>
-          <a href="">
-            <img src={instagramLogo} />
-          </a>
+          <InstagramLink iconOnly />
         </li>
         <li>
-          <a href="">
-            <img src={tiktokLogo} />
-          </a>
+          <TiktokLink iconOnly />
         </li>
       </ul>
     </footer>

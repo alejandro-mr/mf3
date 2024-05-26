@@ -5,6 +5,7 @@ import mf3Logo from "../../assets/mf3-logo.svg";
 import aboutUsPicture from "../../assets/about-us-picture.png";
 
 import "./Index.css";
+import RoadmapSection from "./components/RoadmapSection/RoadmapSection";
 
 function Index() {
   return (
@@ -84,22 +85,7 @@ function Index() {
         </section>
       </div>
       <CommunitySection />
-      <div className="section-wrapper bg-gray-6 bg-[url('/roadmap-bg.png')]">
-        <p>
-          Comienza tu historia en <span>MF3</span> y sé tu mejor versión
-        </p>
-        <p>
-          Si quieres formar parte de la MF3, tu primera prueba será medirte en
-          los clasificatorios (Qualifiers MF3) que se están llevando a cabo en
-          todo el país.
-        </p>
-        <p>
-          Inscríbete y participa contra otros deportistas que buscan abrirse
-          camino en el Functional Fitness, gracias a su formato Online, podrás
-          participar desde el Box en el que estás inscrito y así ver en donde
-          estás en el mundo del F.F. de México.
-        </p>
-      </div>
+      <RoadmapSection />
       <SocialSection />
     </>
   );

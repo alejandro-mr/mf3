@@ -14,11 +14,16 @@ export default {
         },
         green: {
           neutral: "#16CB9F",
+          dark: "#1EAC8A",
         },
         gold: "#CEAA5B",
         mustard: "#FAB348",
         violet: {
           neutral: "#9888FF",
+        },
+        red: {
+          neutral: "#F64161",
+          dark: "#D62C4A",
         },
       },
       fontFamily: {
