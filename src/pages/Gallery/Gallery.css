@@ -1,0 +1,28 @@
+.gallery {
+  @apply flex flex-col flex-1 items-center pt-[14.5rem] pb-[6.5rem] px-10;
+  @apply bg-gray-5 bg-[url('/gallery-bg.png')] bg-no-repeat bg-cover;
+
+  & .gallery-container {
+    @apply flex flex-col gap-y-20 w-full mt-24 px-24 pt-12 pb-[6.25rem] rounded-[1.25rem] bg-gray-1 text-gray-6;
+  }
+
+  & .strip {
+    @apply flex flex-1 flex-wrap gap-y-6 w-full justify-between items-center;
+
+    & .title {
+      @apply font-bold text-2xl	leading-[34px];
+    }
+
+    & a {
+      @apply flex gap-2.5 items-end ml-auto text-sm;
+    }
+
+    & .images {
+      @apply grid grid-cols-4 gap-10 w-full;
+
+      & div {
+        @apply bg-gray-2 rounded-md h-40;
+      }
+    }
+  }
+}
