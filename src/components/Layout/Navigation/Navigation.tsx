@@ -1,17 +1,33 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { debounce } from "lodash";
 import mf3Logo from "../../../assets/mf3-logo.svg";
 import "./Navigation.css";
 
 function Navigation() {
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 125) {
+          setScrolled(true);
+        }
+        if (window.scrollY <= 120) {
+          setScrolled(false);
+        }
+      });
+    }
+  }, []);
   const [isVisible, setVisible] = useState(false);
+  const [isScrolled, setScrolled] = useState(false);
   const handleMouseLeave = debounce(() => setVisible(false), 100);
   const handleMouseEnter = () => {
     setVisible(true);
     handleMouseLeave.cancel();
   };
   return (
-    <nav role="navigation" className="navigation">
+    <nav
+      role="navigation"
+      className={`navigation ${isScrolled ? "solid" : ""}`}
+    >
       <a href="">Inicio</a>
       <a href="">Worlds 2024</a>
       <a href="">Afíliate</a>
@@ -43,7 +59,7 @@ function Navigation() {
           </ul>
         </div>
       </div>
-      <a href="">Galería</a>
+      <a href="/galeria">Galería</a>
       <a href="">Contacto</a>
     </nav>
   );

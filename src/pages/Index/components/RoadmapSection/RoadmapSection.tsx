@@ -1,6 +1,6 @@
 function RoadmapSection() {
   return (
-    <div className="section-wrapper bg-gray-6 bg-[url('/roadmap-bg.png')] bg-no-repeat px-10 pt-[21.375rem] items-center ">
+    <div className="section-wrapper bg-gray-6 bg-[url('/roadmap-bg.png')] bg-contain bg-no-repeat px-10 pt-[21.375rem] items-center">
       <div className="bg-gray-2 text-gray-6 rounded-[20px] pt-[3.875rem] pb-[9.813rem] px-24 w-full">
         <div className="flex flex-col gap-4 items-center pb-28 text-gray-5">
           <p className="font-bold text-2xl text-black pb-4">

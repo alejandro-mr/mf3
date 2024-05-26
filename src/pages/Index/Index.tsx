@@ -25,7 +25,7 @@ function Index() {
         </p>
         <a className="button">Comenzar</a>
       </section>
-      <div className="absolute top-[750px] inset-x-0 mx-auto z-10 w-[69rem] min-w-[69rem]">
+      <div className="absolute top-[626px] inset-x-0 mx-auto z-10 w-[69rem] min-w-[69rem]">
         <SponsorsBar />
       </div>
       <div className="section-wrapper bg-black">

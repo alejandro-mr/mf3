@@ -1,5 +1,5 @@
 .navigation {
-  @apply flex items-center justify-center gap-[4.75rem] min-h-[7.75rem] max-h-[7.75rem] bg-transparent;
+  @apply fixed w-full flex items-center justify-center gap-[4.75rem] min-h-[7.75rem] max-h-[7.75rem] bg-transparent z-50;
   @apply font-bebas text-white text-[22px] uppercase;
 
   & > a, div {
@@ -35,4 +35,8 @@
   & .dropdown.visible {
     @apply opacity-100 top-10;
   }
+}
+
+.solid {
+  @apply bg-gray-6 drop-shadow-md transition-all;
 }
