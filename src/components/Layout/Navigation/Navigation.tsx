@@ -34,7 +34,8 @@ function Navigation() {
       <a href="">Worlds 2024</a>
       <a href="">Afíliate</a>
       <img src={mf3Logo} className="h-20 px-8" />
-      <div
+      <NavLink
+        to="/eventos"
         className="relative"
         onMouseLeave={handleMouseLeave}
         onMouseEnter={handleMouseEnter}
@@ -60,7 +61,7 @@ function Navigation() {
             </div>
           </ul>
         </div>
-      </div>
+      </NavLink>
       <NavLink to="/galeria">Galería</NavLink>
       <a href="">Contacto</a>
     </nav>
