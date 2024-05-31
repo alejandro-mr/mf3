@@ -1,14 +1,18 @@
+import styles from "./RegionsMap.module.css";
 import regionsMapSvg from "../../../../assets/regiones.svg";
+import redGlowSvg from "@/assets/red-glow.svg";
 
 function RegionsMap() {
   return (
-    <div className="flex flex-col flex-auto w-full bg-gray-5 items-center text-white rounded-[1.25rem] pt-[4.25rem] px-[5.875rem] pb-[5.625rem]">
-      <h2 className="font-bebas text-6xl mb-3 leading-[4.5rem]">
-        Regiones MF3
-      </h2>
-      <img src={regionsMapSvg} className="mb-14" />
-      <div className="flex flex-auto flex-wrap w-full justify-between">
-        {Regions()}
+    <div className="relative w-full flex flex-col items-center z-0">
+      <img
+        src={redGlowSvg}
+        className="absolute -top-[150px] -z-10 h-[300px] w-[592px]"
+      />
+      <div className={styles.container}>
+        <h2>Regiones MF3</h2>
+        <img src={regionsMapSvg} className="mb-14" />
+        <div className={styles.regions}>{Regions()}</div>
       </div>
     </div>
   );
@@ -17,12 +21,10 @@ function RegionsMap() {
 function Regions() {
   return (
     <>
-      <div className="bg-gray-6 rounded-2xl p-6 text-xs">
-        <p className="font-bebas text-green-neutral text-[1.375rem] leading-6">
-          Región 1
-        </p>
-        <p className="pb-3 font-semibold text-gray-3 leading-5"># Vacantes</p>
-        <ul className="leading-5">
+      <div className={styles.region}>
+        <p className={styles.title + " text-green-neutral"}>Región 1</p>
+        <p className={styles.vacants}># Vacantes</p>
+        <ul>
           <li>BC</li>
           <li>BCS</li>
           <li>Chihuahua</li>
@@ -32,12 +34,10 @@ function Regions() {
         </ul>
       </div>
 
-      <div className="bg-gray-6 rounded-2xl p-6 text-xs">
-        <p className="font-bebas text-gold text-[1.375rem] leading-6">
-          Región 2
-        </p>
-        <p className="pb-3 font-semibold text-gray-3 leading-5"># Vacantes</p>
-        <ul className="leading-5">
+      <div className={styles.region}>
+        <p className={styles.title + " text-gold"}>Región 2</p>
+        <p className={styles.vacants}># Vacantes</p>
+        <ul>
           <li>Chiapas</li>
           <li>Campeche</li>
           <li>Quintana Roo</li>
@@ -47,12 +47,10 @@ function Regions() {
         </ul>
       </div>
 
-      <div className="bg-gray-6 rounded-2xl p-6 text-xs">
-        <p className="font-bebas text-violet-neutral text-[1.375rem] leading-6">
-          Región 3
-        </p>
-        <p className="pb-3 font-semibold text-gray-3 leading-5"># Vacantes</p>
-        <ul className="leading-5">
+      <div className={styles.region}>
+        <p className={styles.title + " text-violet-neutral"}>Región 3</p>
+        <p className={styles.vacants}># Vacantes</p>
+        <ul>
           <li>Coahuila</li>
           <li>Nuevo León</li>
           <li>San Luis Potosí</li>
@@ -61,12 +59,10 @@ function Regions() {
         </ul>
       </div>
 
-      <div className="bg-gray-6 rounded-2xl p-6 text-xs">
-        <p className="font-bebas text-red-neutral text-[1.375rem] leading-6">
-          Región 4
-        </p>
-        <p className="pb-3 font-semibold text-gray-3 leading-5"># Vacantes</p>
-        <ul className="leading-5">
+      <div className={styles.region}>
+        <p className={styles.title + " text-red-neutral"}>Región 4</p>
+        <p className={styles.vacants}># Vacantes</p>
+        <ul>
           <li>Ciudad de México</li>
           <li>Estado de México</li>
           <li>Hidalgo</li>
@@ -76,12 +72,10 @@ function Regions() {
         </ul>
       </div>
 
-      <div className="bg-gray-6 rounded-2xl p-6 text-xs">
-        <p className="font-bebas text-mustard text-[1.375rem] leading-6">
-          Región 5
-        </p>
-        <p className="pb-3 font-semibold text-gray-3 leading-5"># Vacantes</p>
-        <ul className="leading-5">
+      <div className={styles.region}>
+        <p className={styles.title + " text-mustard"}>Región 5</p>
+        <p className={styles.vacants}># Vacantes</p>
+        <ul>
           <li>Aguascalientes</li>
           <li>Colima</li>
           <li>Guanajuato</li>

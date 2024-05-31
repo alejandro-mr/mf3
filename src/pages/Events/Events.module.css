@@ -1,6 +1,6 @@
 .hero {
-  @apply flex flex-col items-center min-h-[54.375rem] h-[54.375rem] pt-[10.25rem] text-center;
-  @apply before:h-[54.375rem] before:bg-gray-6 before:bg-[url('/gallery-bg.png')] before:bg-no-repeat before:bg-center before:bg-cover before:absolute before:top-0 before:inset-0 before:-z-10;
+  @apply flex flex-col items-center min-h-[55.375rem] h-[55.375rem] pt-[10.25rem] text-center;
+  @apply before:h-[55.375rem] before:bg-gray-6 before:bg-[url('/gallery-bg.png')] before:bg-no-repeat before:bg-center before:bg-cover before:absolute before:top-0 before:inset-0 before:-z-10;
 
   & > h1 {
     @apply font-bebas text-[5rem] text-center tracking-wide leading-[6rem] mb-9;

@@ -1,11 +1,15 @@
-import SponsorsBar from "../../components/SponsorsBar/SponsorsBar";
+import SponsorsBar from "@/components/SponsorsBar/SponsorsBar";
+import RegionsMap from "./components/RegionsMap/RegionsMap";
+import GrayCrossDecoration from "./components/GrayCrossDecoration/GrayCrossDecoration";
+import RedCrossDecoration from "./components/RedCrossDecoration/RedCrossDecoration";
 
 import styles from "./Events.module.css";
-import RegionsMap from "./components/RegionsMap/RegionsMap";
 
 function Events() {
   return (
     <div>
+      <GrayCrossDecoration />
+      <RedCrossDecoration />
       <section className={styles.hero}>
         <h1>
           Participa en uno de los
@@ -25,9 +29,9 @@ function Events() {
           proceso de afiliación.
         </p>
         <a className={styles.button}>Comenzar Proceso</a>
-        <div className="h-[12.5rem] w-full mt-auto flex flex-1 bg-green-neutral/80" />
+        <div className="h-[12.5rem] w-full mt-auto flex flex-1 bg-green-neutral/80 z-10" />
       </section>
-      <div className="absolute top-[746px] inset-x-0 mx-auto z-10 w-[69rem] min-w-[69rem]">
+      <div className="absolute top-[746px] inset-x-0 mx-auto z-20 w-[69rem] min-w-[69rem]">
         <SponsorsBar />
       </div>
       <section className="flex flex-col items-center bg-gray-1 pt-[13.25rem] text-gray-5 px-[8.5rem] pb-28">
