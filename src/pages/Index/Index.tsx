@@ -25,12 +25,12 @@ function Index() {
         </p>
         <a className="button">Comenzar</a>
       </section>
-      <div className="absolute top-[746px] inset-x-0 mx-auto z-10 w-[69rem] min-w-[69rem]">
+      <div className="max-lg:hidden absolute top-[746px] inset-x-0 mx-auto z-10 w-[69rem] min-w-[69rem]">
         <SponsorsBar />
       </div>
       <div className="section-wrapper bg-black">
         <section className="about-us">
-          <div>
+          <div className="max-lg:px-4">
             <h2>¿Quiénes somos?</h2>
             <div className="flex flex-col gap-2 mb-16">
               <p className="font-semibold	text-lg">
@@ -75,12 +75,12 @@ function Index() {
               </li>
             </ul>
           </div>
-          <div className="relative min-w-[470px] flex justify-end -z-10">
+          <div className="relative md:min-w-[470px] flex justify-end -z-10 max-sm:pl-10">
             <img
               src={mf3Logo}
-              className="absolute -bottom-20 right-[322px] h-[179px]"
+              className="absolute -bottom-20 right-[300px] md:right-[322px] lg:h-[179px]"
             />
-            <img src={aboutUsPicture} className="" />
+            <img src={aboutUsPicture} />
           </div>
         </section>
       </div>
