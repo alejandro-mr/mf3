@@ -1,9 +1,9 @@
 .gallery {
   @apply flex flex-col flex-1 items-center pt-[14.5rem] pb-[6.5rem] px-10;
-  @apply bg-gray-5 bg-[url('/gallery-bg.png')] bg-no-repeat;
+  @apply bg-gray-5 bg-[url('/gallery-bg.png')] bg-no-repeat bg-contain;
 
   & .gallery-container {
-    @apply flex flex-col gap-y-20 w-full mt-24 px-24 pt-12 pb-[6.25rem] rounded-[1.25rem] bg-gray-1 text-gray-6 z-0;
+    @apply flex flex-col gap-y-20 w-full mt-24 px-10 lg:px-24 pt-12 pb-[6.25rem] rounded-[1.25rem] bg-gray-1 text-gray-6 z-0;
   }
 
   & .strip {
@@ -18,7 +18,7 @@
     }
 
     & .images {
-      @apply grid grid-cols-4 gap-10 w-full;
+      @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-full;
 
       & div {
         @apply bg-gray-2 rounded-md h-40;
