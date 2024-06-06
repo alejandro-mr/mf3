@@ -31,16 +31,16 @@ function Events() {
         <a className={styles.button}>Comenzar Proceso</a>
         <div className="h-[12.5rem] w-full mt-auto flex flex-1 bg-green-neutral/80 z-10" />
       </section>
-      <div className="absolute top-[746px] inset-x-0 mx-auto z-20 w-[69rem] min-w-[69rem]">
+      <div className="max-lg:hidden absolute top-[746px] inset-x-0 mx-auto z-20 w-[69rem] min-w-[69rem]">
         <SponsorsBar />
       </div>
-      <section className="flex flex-col items-center bg-gray-1 pt-[13.25rem] text-gray-5 px-[8.5rem] pb-28">
+      <section className="flex flex-col items-center bg-gray-1 pt-[13.25rem] text-gray-5 px-20 lg:px-[8.5rem] pb-28">
         <h2 className="text-center font-bebas text-6xl">
           Pasos para participar en <br />
           <span className="text-green-dark">el regional</span>
         </h2>
-        <div className="flex flex-auto w-full mt-10 mb-[10.5rem] justify-between">
-          <div className="flex flex-col gap-3 py-8 px-24 border border-gray-2 rounded-2xl max-w-[27.125rem] relative">
+        <div className="flex max-md:flex-col flex-auto w-full mt-10 mb-[10.5rem] justify-between gap-4 md:gap-20">
+          <div className="flex flex-col gap-3 py-8 px-10 lg:px-24 border border-gray-2 rounded-2xl max-w-[27.125rem] relative">
             <span className="font-bebas text-[17.5rem] text-gray-2 leading-[336px] absolute -left-[4.5rem] bottom-0">
               1
             </span>
@@ -54,7 +54,7 @@ function Events() {
               peldaño más hacia el Worlds 2024 Hungría.
             </p>
           </div>
-          <div className="flex flex-col gap-3 py-8 px-24 border border-gray-2 rounded-2xl max-w-[27.125rem] relative">
+          <div className="flex flex-col gap-3 py-8 px-10 lg:px-24 border border-gray-2 rounded-2xl max-w-[27.125rem] relative">
             <span className="font-bebas text-[17.5rem] text-gray-2 leading-[336px] absolute -left-[4.5rem] bottom-0">
               2
             </span>

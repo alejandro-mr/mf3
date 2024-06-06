@@ -11,6 +11,6 @@
   }
 
   & > .button {
-    @apply mt-9 mb-12 px-7 py-1.5 bg-green-neutral text-black text-sm rounded-3xl leading-6;
+    @apply mt-2 lg:mt-9 mb-4 lg:mb-12 px-7 py-1.5 bg-green-neutral text-black text-sm rounded-3xl leading-6;
   }
 }

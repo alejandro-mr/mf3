@@ -1,13 +1,13 @@
 .container {
-  @apply flex flex-col flex-auto w-full bg-gray-5 items-center text-white rounded-[1.25rem] pt-[4.25rem] px-[5.875rem] pb-[5.625rem] z-0;
+  @apply flex flex-col flex-auto w-full bg-gray-5 items-center text-white rounded-[1.25rem] pt-[4.25rem] px-4 lg:px-[5.875rem] pb-[5.625rem] z-0;
 
   & > h2 {
-    @apply font-bebas text-6xl mb-3 leading-[4.5rem];
+    @apply font-bebas text-6xl mb-3 leading-[4.5rem] max-lg:text-center;
   }
 }
 
 .regions {
-  @apply flex flex-auto flex-wrap w-full justify-between gap-4;
+  @apply flex flex-auto flex-wrap w-full items-start justify-center md:justify-between gap-4;
 }
 
 .region {
