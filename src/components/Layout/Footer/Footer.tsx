@@ -10,10 +10,10 @@ import TiktokLink from "../../TiktokLink/TiktokLink";
 function Footer() {
   return (
     <footer className="footer">
-      <div className="flex gap-x-[3.25rem]">
+      <div className="flex max-lg:items-center max-lg:flex-col gap-[3.25rem]">
         <img src={mf3Logo} className="select-none" />
-        <span className="h-[8.75rem] w-px bg-[#7A8087]" />
-        <div className="self-end">
+        <span className="max-lg:hidden h-[8.75rem] w-px bg-[#7A8087]" />
+        <div className="self-end max-lg:flex max-lg:flex-col max-lg:items-center">
           <ul className="footer-navigation">
             <li>
               <a href="">Aviso de Privacidad</a>
@@ -22,7 +22,7 @@ function Footer() {
               <a href="">Términos y Condiciones</a>
             </li>
           </ul>
-          <div className="text-[#7A8087] pt-7">
+          <div className="text-[#7A8087] pt-7 max-lg:text-center">
             México Funcional Fitness Federación | Todos los Derechos Reservados
             2024.
           </div>

@@ -1,5 +1,5 @@
 .footer {
-  @apply flex mt-auto items-center justify-center gap-x-40 min-h-72;
+  @apply flex max-lg:flex-col mt-auto items-center justify-center max-lg:py-4 max-lg:gap-10 gap-x-40 lg:min-h-72;
   @apply bg-black text-white;
 }
 

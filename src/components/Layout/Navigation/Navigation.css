@@ -1,5 +1,5 @@
 .navigation {
-  @apply fixed w-full flex items-center justify-center gap-[4.75rem] min-h-[7.75rem] max-h-[7.75rem] bg-transparent z-50;
+  @apply w-full flex flex-col items-center justify-center gap-6 py-4 lg:fixed lg:flex-row lg:gap-[4.75rem] lg:min-h-[7.75rem] lg:max-h-[7.75rem] lg:bg-transparent bg-gray-6 z-50;
   @apply font-bebas text-white text-[22px] uppercase;
 
   & > a, div {
