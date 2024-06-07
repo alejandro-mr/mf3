@@ -1,0 +1,4 @@
+.section {
+  @apply flex flex-col flex-1 items-center pt-[14.5rem] pb-[6.5rem] px-10;
+  @apply bg-gray-5 bg-[url('/gallery-bg.png')] bg-no-repeat bg-cover;
+}

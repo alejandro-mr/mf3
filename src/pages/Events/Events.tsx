@@ -29,7 +29,7 @@ function Events() {
           proceso de afiliación.
         </p>
         <a className={styles.button}>Comenzar Proceso</a>
-        <div className="h-[12.5rem] w-full mt-auto flex flex-1 bg-green-neutral/80 z-10" />
+        <div className="h-[200px] min-h-[200px] max-h-[200px] w-full mt-auto flex flex-1 bg-green-neutral/80 z-10" />
       </section>
       <div className="max-lg:hidden absolute top-[746px] inset-x-0 mx-auto z-20 w-[69rem] min-w-[69rem]">
         <SponsorsBar />

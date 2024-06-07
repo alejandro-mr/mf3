@@ -1,5 +1,5 @@
 .navigation {
-  @apply w-full flex flex-col items-center justify-center gap-6 py-4 lg:fixed lg:flex-row lg:gap-[4.75rem] lg:min-h-[7.75rem] lg:max-h-[7.75rem] lg:bg-transparent bg-gray-6 z-50;
+  @apply fixed transition-all -translate-y-full w-full flex flex-col items-center justify-center gap-6 py-4 lg:translate-y-0 lg:flex-row lg:gap-[4.75rem] lg:min-h-[7.75rem] lg:max-h-[7.75rem] lg:bg-transparent bg-gray-6 z-50;
   @apply font-bebas text-white text-[22px] uppercase;
 
   & > a, div {
@@ -12,7 +12,7 @@
   }
 
   & .dropdown {
-    @apply absolute -start-1/2 p-5 min-w-[9.125rem] transition-opacity duration-500;
+    @apply max-lg:hidden absolute -start-1/2 p-5 min-w-[9.125rem] transition-opacity duration-500;
     @apply bg-black rounded-md drop-shadow-md font-franklin text-gray-1 text-left opacity-0 -top-96;
     @apply hover:no-underline text-gray-1;
     /*@apply opacity-0 -top-96;*/
@@ -24,7 +24,6 @@
     & ul > li > a {
       @apply hover:underline text-gray-1;
     }
-
 
     & > ul > div.action {
       @apply flex flex-col gap-y-3.5 -mt-0.5;
