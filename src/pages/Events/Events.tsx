@@ -19,7 +19,7 @@ function Events() {
           Busca tu región y empieza tu camino en la MF3, ¡afíliate y participa
           para representar a tu región!
         </p>
-        <p>
+        <p className="mx-10">
           ¡Busca la información más actual en nuestras redes sociales!
           <br />
           <br />

@@ -1,16 +1,16 @@
 .hero {
-  @apply flex flex-col items-center min-h-[55.375rem] h-[55.375rem] pt-[10.25rem] text-center;
-  @apply before:h-[55.375rem] before:bg-gray-6 before:bg-[url('/gallery-bg.png')] before:bg-no-repeat before:bg-center before:bg-cover before:absolute before:top-0 before:inset-0 before:-z-10;
+  @apply flex flex-col items-center md:h-[35rem] lg:min-h-[55.375rem] lg:h-[55.375rem] pt-20 lg:pt-[10.25rem] text-center;
+  @apply before:md:min-h-[35rem] before:lg:h-[55.375rem] before:bg-gray-6 before:bg-[url('/gallery-bg.png')] before:bg-no-repeat before:bg-center before:bg-cover before:absolute before:top-0 before:inset-0 before:-z-10;
 
   & > h1 {
-    @apply font-bebas text-[5rem] text-center tracking-wide leading-[6rem] mb-9;
+    @apply font-bebas text-7xl lg:text-[5rem] text-center tracking-wide leading-[6rem] mb-9 mx-10;
   }
 
   & > .subtitle {
-    @apply font-bold text-xl mb-4;
+    @apply font-bold text-xl mb-4 mx-10;
   }
 
   & > .button {
-    @apply mt-2 lg:mt-9 mb-4 lg:mb-12 px-7 py-1.5 bg-green-neutral text-black text-sm rounded-3xl leading-6;
+    @apply mt-6 lg:mt-9 mb-6 lg:mb-12 px-7 py-1.5 bg-green-neutral text-black text-sm rounded-3xl leading-6;
   }
 }
